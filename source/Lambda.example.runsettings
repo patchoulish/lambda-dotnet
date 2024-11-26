@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RunSettings>
+	<RunConfiguration>
+		<EnvironmentVariables>
+			<LAMBDA_API_KEY>YOUR_LAMBDA_API_KEY</LAMBDA_API_KEY>
+		</EnvironmentVariables>
+	</RunConfiguration>
+</RunSettings>
