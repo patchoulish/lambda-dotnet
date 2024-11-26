@@ -17,7 +17,8 @@ namespace Lambda.Cloud.Filesystems
 			Type typeToConvert,
 			JsonSerializerOptions options) =>
 				new LambdaCloudFilesystemId(
-					reader.GetGuid());
+					Guid.Parse(
+						reader.GetString()));
 
 		/// <inheritdoc/>
 		public override void Write(

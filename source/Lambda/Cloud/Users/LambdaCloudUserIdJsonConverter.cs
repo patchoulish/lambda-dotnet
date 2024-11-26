@@ -17,7 +17,8 @@ namespace Lambda.Cloud.Users
 			Type typeToConvert,
 			JsonSerializerOptions options) =>
 				new LambdaCloudUserId(
-					reader.GetGuid());
+					Guid.Parse(
+						reader.GetString()));
 
 		/// <inheritdoc/>
 		public override void Write(
