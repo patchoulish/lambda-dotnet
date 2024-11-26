@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Lambda</RootNamespace>
+
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<!-- Package reference(s) -->
+	<ItemGroup>
+		<PackageReference Include="MSTest.TestAdapter" Version="3.6.2" />
+		<PackageReference Include="MSTest.TestFramework" Version="3.6.2" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+		<PackageReference Include="coverlet.collector" Version="6.0.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	
+	<!-- Project reference(s) -->
+	<ItemGroup>
+		<ProjectReference Include="..\Lambda\Lambda.csproj" />
+		<ProjectReference Include="..\Lambda.Extensions.DependencyInjection\Lambda.Extensions.DependencyInjection.csproj" />
+	</ItemGroup>
+</Project>
